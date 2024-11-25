@@ -1,7 +1,6 @@
 /* General style */
 body{
     font-family: 'Garamond', serif;
-    background-color: #2a2a2a;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -31,8 +30,9 @@ body{
 }
 
 .sidebar {
-    flex: 1; /* Sidebar takes less space */
-    background-color: #333;
+    flex: 1; 
+    border: 2px solid #444;
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 8px;
     margin-top: 20px;
@@ -81,7 +81,7 @@ h2{
 }
 
 h3{
-    font-family: 'Grorgia', serif;
+    font-family: 'Georgia', serif;
     color: #ff6347;
     text-transform: uppercase;
     text-shadow: 1px 1px 3px #000;
@@ -94,5 +94,17 @@ h3{
     background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
     margin-bottom: 8px;
+}
+
+.explanation p, .participation p, .benefits p, .requirements p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+a{
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
 }
 
