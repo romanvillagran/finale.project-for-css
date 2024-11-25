@@ -151,3 +151,32 @@ footer a:hover{
 h1, h2, h3, p, a {
     font-family: 'garamond', serif;
 }
+
+footer{
+    font-family: 'Georgia', serif;
+}
+
+.design-selection{
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    flex: 1 1 150px;
+}
+
+.design-name{
+    /* background-color: #444; */
+    color: #ff6347;
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: auto;
+}
+
+.design-name:hover{
+    background-color: #341712;
+}
+
+
