@@ -30,4 +30,11 @@ body{
     gap: 20px;
 }
 
-
+.sidebar {
+    flex: 1; /* Sidebar takes less space */
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    color: #fff;
+}
