@@ -16,3 +16,18 @@ body{
     background-attachment: fixed;
 }
 
+/* page wrapper for flexbox layout */
+.page-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-top: 20px;
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+
