@@ -38,3 +38,15 @@ body{
     margin-top: 20px;
     color: #fff;
 }
+
+.sidebar a{
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.sidebar a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+
