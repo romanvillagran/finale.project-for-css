@@ -90,7 +90,7 @@ h3{
 
 .explanation, .participation, .benefits, .requirements{
     border: 2px solid #444;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
