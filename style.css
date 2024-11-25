@@ -76,5 +76,19 @@ h2{
 }
 
 #zen-summary{
+    font-size: 1.2rem;
+    color:white;
+}
+
+h3{
+    font-family: 'Grorgia', serif;
+    color: #ff6347;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #000;
+    font-size: 1.8rem;
+}
+
+.explanation, .participation, .benefits, .requirements{
+    border: 2px solid #444;
     
 }
