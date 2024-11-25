@@ -1,9 +1,18 @@
-body {
+/* General style */
+body{
+    font-family: 'Garamond', serif;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    background: #57799f url(main_bg.jpg) no-repeat bottom fixed;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    font-family: verdana, arial, "sans-serif";
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-height: 100vh;
+    overflow-y: auto;
+    background-image: url('https://wallpapers.com/images/hd/black-gothic-paisley-floral-pattern-z4yscku7z1u7o4sf.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
+
