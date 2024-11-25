@@ -165,7 +165,7 @@ footer{
 }
 
 .design-name{
-    /* background-color: #444; */
+    background-color: #444;
     color: #ff6347;
     padding: 10px;
     font-size: 1.2rem;
@@ -180,11 +180,27 @@ footer{
     background-color: #341712;
 }
 
-nav ul{
-    list-style-type: none;
+ul {
+    list-style-type: none;  
     padding-left: 0;
     margin: 0;
 }
+
+nav li {
+    position: relative;
+    padding-left: 25px; 
+}
+
+nav li::before {
+    content: '\2022'; 
+    font-size: 1.5rem;
+    color: #ff6347; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
 ::-webkit-scrollbar {
     width: 12px;
 }
