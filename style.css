@@ -90,5 +90,9 @@ h3{
 
 .explanation, .participation, .benefits, .requirements{
     border: 2px solid #444;
-    
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    margin-bottom: 8px;
 }
+
