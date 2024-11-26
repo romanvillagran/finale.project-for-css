@@ -124,14 +124,11 @@ footer{
 }
 
 footer a {
-    color: #ff6347;
+    color: rgb(164, 124, 164);
     margin: 0 10px;
     font-weight: bold;
 }
 
-footer a:hover{
-    color: red;
-}
 
 .sidebar nav a {
     font-size: 1.2rem;
@@ -141,7 +138,6 @@ footer a:hover{
 }
 
 #zen-preamble{
-    background-color: rgba(255, 69, 0, 0.6);
     color: white;
     padding: 25px;
     border-radius: 10px;
