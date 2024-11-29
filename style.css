@@ -1,18 +1,18 @@
 /* General style */
 body{
-    font-family: 'Garamond', serif;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    min-height: 100vh;
-    overflow-y: auto;
-    background-image: url('https://wallpapers.com/images/hd/black-gothic-paisley-floral-pattern-z4yscku7z1u7o4sf.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    font-family: 'Garamond', serif; /* Sets the font family to Garamond with serif fallback */
+    color: #e0e0e0;/* Sets the text color to light grey */
+    margin: 0;/* Removes default margin */
+    padding: 0;/* Removes default padding */
+    display: flex;/* Enables flexbox layout */
+    justify-content: flex-start;/* Aligns children elements to the start horizontally */
+    align-items: flex-start;/* Aligns children elements to the start vertically */
+    min-height: 100vh;/* Ensures body takes at least 100% of the viewport height */
+    overflow-y: auto;/* Enables vertical scrolling */
+    background-image: url('https://wallpapers.com/images/hd/black-gothic-paisley-floral-pattern-z4yscku7z1u7o4sf.jpg');/* sets the background view */
+    background-size: cover;/* Ensures the background image covers the entire body */
+    background-position: center center;/* Centers the background image */
+    background-attachment: fixed;/* Fixes the background image while scrolling */
 }
 
 /* page wrapper for flexbox layout */
