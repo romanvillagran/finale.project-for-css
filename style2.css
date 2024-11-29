@@ -1,0 +1,222 @@
+/* General style */
+body{
+    font-family: 'Garamond', serif; /* Sets the font family to Garamond with serif fallback */
+    color: #e0e0e0;/* Sets the text color to light grey */
+    margin: 0;/* Removes default margin */
+    padding: 0;/* Removes default padding */
+    display: flex;/* Enables flexbox layout */
+    justify-content: flex-start;/* Aligns children elements to the start horizontally */
+    align-items: flex-start;/* Aligns children elements to the start vertically */
+    min-height: 100vh;/* Ensures body takes at least 100% of the viewport height */
+    overflow-y: auto;/* Enables vertical scrolling */
+    background-image: url('https://wallpapers.com/images/hd/black-gothic-paisley-floral-pattern-z4yscku7z1u7o4sf.jpg');/* sets the background view */
+    background-size: cover;/* Ensures the background image covers the entire body */
+    background-position: center center;/* Centers the background image */
+    background-attachment: fixed;/* Fixes the background image while scrolling */
+}
+
+/* page wrapper for flexbox layout */
+.page-wrapper{
+    display: flex;/* Enables flexbox layout */
+    flex-direction: row;/* Aligns children elements in a horizontal row */
+    justify-content: flex-start;/* Aligns children elements to the start horizontally */
+    align-items: flex-start;/* Aligns children elements to the start vertically */
+    max-width: 1200px;/* Limits the max width to 1200px */
+    margin-top: 20px;/* Adds a 20px margin at the top */
+    position: relative;/* Sets the positioning context for child elements */
+    padding: 20px;/* Adds 20px padding around the container */
+    width: 100%;/* Sets the width to 100% of the parent element */
+    gap: 20px;/* Adds 20px space between flex items */
+}
+
+.sidebar {
+    flex: 1; /* Makes the sidebar take up equal space */
+    border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
+    background: rgba(0, 0, 0, 0.6);/* Semi-transparent black background */
+    padding: 20px;/* Adds 20px padding inside the sidebar */
+    border-radius: 8px;/* Rounds the corners with a radius of 8px */
+    margin-top: 20px;/* Adds a 20px margin at the top */
+    color: #fff;/* Sets the text color to white */
+}
+
+.sidebar a{
+    color: darkgrey;/* Sets link color to dark grey */
+    text-decoration: none;/* Removes underline from links */
+}
+
+.sidebar a:hover{
+    color: red; /* Changes link color to red on hover */
+    text-decoration: underline; /* Underlines links on hover */
+}
+
+header{
+    text-align: center; /* Centers the text horizontally */
+    color: #fff; /* Sets the text color to white */
+    text-shadow: 2px 2px 5px #000; /* Adds a subtle shadow to the text */
+}
+
+h1{
+    font-size: 3rem;/* Sets the font size to 3rem */
+    letter-spacing: 5px;/* Adds 5px spacing between letters */
+}
+
+h2{
+    font-size: 2rem;/* Sets the font size to 2rem */
+    font-style: italic;/* Makes the text italic */
+}
+
+.intro{
+    background: rgba(0, 0, 0, 0.6);/* Semi-transparent black background */
+    border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
+    padding: 40px;/* Adds 40px padding inside the intro section */
+    margin-bottom: 20px;/* Adds a 20px margin at the bottom */
+    width: 100%;/* Sets the width to 100% of the parent element */
+    max-width: 800px;/* Limits the max width to 800px */
+    border-radius: 10px;/* Rounds the corners with a radius of 10px */
+}
+
+#zen-summary{
+    font-size: 1.2rem;/* Sets the font size to 1.2rem */
+    color:white;/* Sets the text color to white */
+}
+
+h3{
+    font-family: 'Georgia', serif;/* Uses the Georgia font family */
+    color: darkgrey;/* Sets the text color to dark grey */
+    text-transform: uppercase;/* Makes all letters uppercase */
+    text-shadow: 1px 1px 3px #000;/* Adds a subtle shadow to the text */
+    font-size: 1.8rem;/* Sets the font size to 1.8rem */
+}
+
+.explanation, .participation, .benefits, .requirements{
+    border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
+    border-radius: 10px;/* Rounds the corners with a radius of 10px */
+    padding: 20px;/* Adds 20px padding inside each section */
+    background-color: rgba(0, 0, 0, 0.7);/* Semi-transparent black background */
+    margin-bottom: 20px;/* Adds a 20px margin at the bottom */
+}
+
+.explanation p, .participation p, .benefits p, .requirements p {
+    font-size: 1.1rem;/* Sets the font size to 1.1rem */
+    line-height: 1.6;/* Sets the line height to 1.6 for better readability */
+    color: #ccc;/* Sets the text color to light grey */
+}
+
+a{
+    color: #ff6347;/* Sets the link color to tomato red */
+    text-decoration: none;/* Removes underline from links */
+    font-weight: bold; /* Makes links bold */
+
+}
+
+a:hover{
+    color: red;/* Changes link color to red on hover */
+    text-decoration: underline;/* Underlines links on hover */
+}
+
+footer{
+    text-align: center;/* Centers the text horizontally */
+    color: #fff;/* Sets the text color to white */
+    margin-top: 30px;/* Adds a 30px margin at the top */
+    padding: 20px;/* Adds 20px padding inside the footer */
+    background-color: rgba(0, 0, 0, 0.7);/* Semi-transparent black background */
+    border-radius: 8px;/* Rounds the corners with a radius of 8px */
+}
+
+footer a {
+    color: rgb(164, 124, 164);/* Sets the link color to a muted purple */
+    margin: 0 10px;/* Adds 10px margin on the left and right of links */
+    font-weight: bold;/* Makes links bold */
+}
+
+
+.sidebar nav a {
+    font-size: 1.2rem;/* Sets the font size to 1.2rem */
+    letter-spacing: 1px;/* Adds 1px spacing between letters */
+    display: block;/* Makes links block elements */
+    margin-bottom: 10px;/* Adds 10px margin at the bottom of links */
+}
+
+#zen-preamble{
+    color: white;/* Sets the text color to white */
+    padding: 25px;/* Adds 25px padding inside the preamble */
+    border-radius: 10px; /* Rounds the corners with a radius of 10px */
+    font-style: italic;/* Makes the text italic */
+    font-size: 1.2rem;/* Sets the font size to 1.2rem */
+}
+
+h1, h2, h3, p, a {
+    font-family: 'garamond', serif; /* Sets a consistent font family (Garamond) for headers, paragraphs, and links */
+}
+
+footer{
+    font-family: 'Georgia', serif;/* Changes the font to Georgia for footer */
+}
+
+.design-selection{
+    padding: 10px;/* Adds 10px padding inside the design selection section */
+    border-radius: 8px;/* Rounds the corners with a radius of 8px */
+    margin-top: 20px;/* Adds 20px margin at the top */
+    flex: 1 1 150px;/* Allows the element to grow and shrink, with a base size of 150px */
+}
+
+.design-name{
+    background-color: #444;/* Sets a dark grey background color */
+    color:grey;/* Sets the text color to grey */
+    padding: 10px;/* Adds 10px padding inside the design name section */
+    font-size: 1.2rem; /* Sets the font size to 1.2rem */
+    border-radius: 5px;/* Rounds the corners with a radius of 5px */
+    text-decoration: none;/* Removes underline from the link */
+    transition: all 0.3s ease;/* Adds a smooth transition effect for all changes over 0.3s */
+    display: inline-block;/* Makes the element inline but allows block properties like width and height */
+    width: auto;/* Automatically adjusts the width based on content */
+}
+
+.design-name:hover{
+    background-color: #341712; /* Changes the background color to a dark red when hovered */
+}
+
+ul {
+    list-style-type: none; /* Removes the default bullet points */
+    padding-left: 0; /* Removes left padding */
+    margin: 0; /* Removes margin */
+}
+
+nav li {
+    position: relative; /* Allows absolute positioning of the pseudo-element */
+    padding-left: 25px; /* Adds padding to the left of each list item */ 
+}
+
+nav li::before {
+    content: '\2022'; /* Unicode character for the bullet point */
+    font-size: 1.5rem; /* Sets the size of the bullet point */
+    position: absolute; /* Absolutely positions the bullet point */
+    left: 0; /* Positions the bullet at the left edge of the list item */
+    top: 0; /* Aligns the bullet with the top of the list item */
+    font-family: 'Times New Roman', Times, serif; /* Uses Times New Roman for the bullet point */
+}
+
+nav li a {
+    color: #ff6347; /* Sets the link color to a tomato red */
+    font-size: 1.2rem; /* Sets the font size of the link */
+    text-decoration: none; /* Removes the underline from links */
+    padding-left: 10px; /* Adds left padding to the link */
+}
+
+nav li a:hover {
+    color: #fff;/* Changes the link color to white on hover */
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Sets the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #444; /* Sets the color of the scrollbar thumb to dark grey */
+    border-radius: 10px; /* Rounds the corners of the scrollbar thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: #222;/* Sets the color of the scrollbar track to a darker grey */
+}
+
