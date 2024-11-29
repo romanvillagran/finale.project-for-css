@@ -17,16 +17,16 @@ body{
 
 /* page wrapper for flexbox layout */
 .page-wrapper{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin-top: 20px;
-    position: relative;
-    padding: 20px;
-    width: 100%;
-    gap: 20px;
+    display: flex;/* Enables flexbox layout */
+    flex-direction: row;/* Aligns children elements in a horizontal row */
+    justify-content: flex-start;/* Aligns children elements to the start horizontally */
+    align-items: flex-start;/* Aligns children elements to the start vertically */
+    max-width: 1200px;/* Limits the max width to 1200px */
+    margin-top: 20px;/* Adds a 20px margin at the top */
+    position: relative;/* Sets the positioning context for child elements */
+    padding: 20px;/* Adds 20px padding around the container */
+    width: 100%;/* Sets the width to 100% of the parent element */
+    gap: 20px;/* Adds 20px space between flex items */
 }
 
 .sidebar {
