@@ -52,3 +52,13 @@ body {
     right: 10%;
     transform: rotate(15deg); /* Rotates the right wire */
 }
+
+/* Main supporting content area in a 2x2 grid */
+.main.supporting {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two-column grid */
+    grid-gap: 40px; /* Space between the columns */
+    position: relative; /* Allows absolute positioning of pseudo-elements */
+}
+
+
