@@ -31,5 +31,24 @@ body {
     z-index: 10; /* Ensures intro section is above other content */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* adds a shadow around the "photo frame" */
 }
+/* Decorative hanging wire effect before and after the intro */
+.intro::before, .intro::after {
+    content: ''; /* Creates a pseudo-element without content */
+    position: absolute;
+    top: -30px; /* Positions it slightly above the intro */
+    width: 2px; /* Thin wire */
+    height: 30px; /* Height of the wire */
+    background-color: #6B4423; /* Dark wood color */
+}
 
 
+/* Positioning and rotation of the hanging wires */
+.intro::before {
+    left: 10%;
+    transform: rotate(-15deg); /* Rotates the left wire */
+}
+
+.intro::after {
+    right: 10%;
+    transform: rotate(15deg); /* Rotates the right wire */
+}
