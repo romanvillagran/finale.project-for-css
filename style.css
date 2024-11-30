@@ -8,7 +8,7 @@ body {
 
 /* Page wrapper with a grid layout for responsive design */
 .page-wrapper {
-    display: grid;
+    display: grid;/* grid like display */
     grid-template-columns: 1fr 250px; /* Defines a two-column layout, where the second column (sidebar) is 250px wide */
     gap: 40px; /* Adds space between the columns */
     max-width: 1200px; /* Sets a maximum width for the content */
@@ -120,12 +120,12 @@ body {
 
 /* Underline effect for sidebar links on hover */
 .sidebar a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -3px;
-    left: 0;
+    content: '';/* Generate an empty content for the pseudo-element */
+    position: absolute;/* Position the element absolutely relative to its nearest positioned ancestor */
+    width: 100%;/* makes the element take up the full width of its parent */
+    height: 2px;/* sets the height of the element to 2px */
+    bottom: -3px;/* positions the element 3px below its normal position */
+    left: 0;/* align the element with the ledt edge of its parent */
     background-color: #8B4513; /* Dark brown underline */
     transform: scaleX(0); /* Starts with no underline */
     transition: transform 0.3s ease; /* Smooth transition for underline appearance */
@@ -177,26 +177,18 @@ footer a {
 
 /* Adding a subtle texture to frames */
 .intro::before, .main.supporting > div::before, .sidebar {
-    background-image: 
-        linear-gradient(45deg, 
-            rgba(255, 255, 255, 0.1) 25%, 
-            transparent 25%, 
-            transparent 50%, 
-            rgba(255, 255, 255, 0.1) 50%, 
-            rgba(255, 255, 255, 0.1) 75%, 
-            transparent 75%, 
-            transparent); /* Adds a fabric-like texture */
+    background-image:  linear-gradient(45deg,  rgba(255, 255, 255, 0.1) 25%,  transparent 25%,  transparent 50%,  rgba(255, 255, 255, 0.1) 50%,  rgba(255, 255, 255, 0.1) 75%,  transparent 75%,   transparent); /* Adds a fabric-like texture */
     background-size: 10px 10px; /* Defines the size of the texture pattern */
 }
 
 /* Vintage-style imperfections overlay */
 .page-wrapper::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    content: ""; /* generates and empty content for the pseudo-element */
+    position: fixed;/* Position the element absolutely relative to its nearest positioned ancestor */
+    top: 0;/* positions the element at the top of its containing element  */
+    left: 0;/* align the element with the left edge of its containing element */
+    width: 100%;/* makes the element take up the full width if its parent */
+    height: 100%;/* makes the element take uo the full heigh of its parent */
     background-image: linear-gradient(rgba(0,0,0,0.02) 50%, transparent 50%); /* Creates subtle imperfections like stripes */
     background-size: 100% 4px; /* Sets the spacing of the imperfections */
     pointer-events: none; /* Ensures the overlay does not interfere with interactions */
@@ -216,5 +208,5 @@ footer a {
 }
 
 h1, h2,h3{
-    font-family: cursive;
+    font-family: cursive; /* changes the font */
 }
