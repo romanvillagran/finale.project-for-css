@@ -170,10 +170,6 @@ footer a {
     width: 8px; /* Narrow scrollbar */
 }
 
-.main.supporting > div::-webkit-scrollbar-track,.sidebar::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Light background for scrollbar track */
-}
-
 .main.supporting > div::-webkit-scrollbar-thumb,.sidebar::-webkit-scrollbar-thumb {
     background: #8B4513; /* Dark brown color for scrollbar thumb */
     border-radius: 4px; /* Rounded corners for the scrollbar thumb */
@@ -201,8 +197,7 @@ footer a {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: 
-        linear-gradient(rgba(0,0,0,0.02) 50%, transparent 50%); /* Creates subtle imperfections like stripes */
+    background-image: linear-gradient(rgba(0,0,0,0.02) 50%, transparent 50%); /* Creates subtle imperfections like stripes */
     background-size: 100% 4px; /* Sets the spacing of the imperfections */
     pointer-events: none; /* Ensures the overlay does not interfere with interactions */
     z-index: 20; /* Keeps the imperfections overlay on top */
