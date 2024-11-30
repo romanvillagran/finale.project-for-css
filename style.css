@@ -203,9 +203,14 @@ footer a {
     z-index: 20; /* Keeps the imperfections overlay on top */
     opacity: 0.5; /* Makes the imperfections semi-transparent */
     box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.3);
-
 }
 
+/* Scrollbar styling for the entire page */
+::-webkit-scrollbar {
+    width: 12px; /* Defines the width of the scrollbar */
+}
 
-
-
+::-webkit-scrollbar-thumb {
+    background: #55342b; /* Dark brown scrollbar thumb */
+    border-radius: 10px; /* Rounded scrollbar thumb */
+}
