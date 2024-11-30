@@ -61,4 +61,15 @@ body {
     position: relative; /* Allows absolute positioning of pseudo-elements */
 }
 
-
+/* Individual content boxes inside the grid with tilt effect */
+.main.supporting > div {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 10px solid #8B4513; /* Dark brown border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside the boxes */
+    max-height: 300px; /* Limits the height */
+    overflow-y: auto; /* Allows scrolling if content exceeds max height */
+    position: relative;
+    transform-origin: center center; /* Rotation centered within the box */
+    transition: transform 0.3s ease; /* Smooth transition for transform effects */
+}
