@@ -28,7 +28,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     padding: 30px; /* Padding inside the intro section */
     z-index: 10; /* Ensures intro section is above other content */
-    box-shadow: 0px 5px 20px black; /* adds a shadow around the "photo frame" */
+    box-shadow: 0px 5px 20px black, inset 0 0 10px #000000;/* adds a shadow around the "photo frame" also inside the frame */
 }
 /* Decorative hanging wire effect before and after the intro */
 .intro::before, .intro::after {
@@ -64,14 +64,14 @@ body {
 .main.supporting > div {
     background-color: #f4f4f4; /* Light grey background */
     border: 10px solid #8B4513; /* Dark brown border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    box-shadow: 0px 5px 20px black, inset 0 0 10px #000000;/* adds a shadow around the "photo frame" also inside the frame */
     padding: 20px; /* Padding inside the boxes */
     max-height: 300px; /* Limits the height */
     overflow-y: auto; /* Allows scrolling if content exceeds max height */
     position: relative;
     transform-origin: center center; /* Rotation centered within the box */
     transition:  0.1s ease; /* Smooth transition for transform effects */
-    box-shadow: 0px 5px 20px black; /* adds a shadow around the "photo frame" */
+    
 }
 
 /* Tilt effect for each grid item */
@@ -102,7 +102,7 @@ body {
 .sidebar {
     background-color: #f4f4f4; /* Light grey background */
     border: 10px solid #8B4513; /* Dark brown border */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0px 5px 20px black, inset 0 0 10px #000000;/* adds a shadow around the "photo frame" also inside the frame */
     padding: 20px; /* Padding inside the sidebar */
     max-height: 500px; /* Limits height */
     overflow-y: auto; /* Allows scrolling */
@@ -179,6 +179,37 @@ footer a {
     border-radius: 4px; /* Rounded corners for the scrollbar thumb */
 }
 
+/* Adding a subtle texture to frames */
+.intro::before, .main.supporting > div::before, .sidebar {
+    background-image: 
+        linear-gradient(45deg, 
+            rgba(255, 255, 255, 0.1) 25%, 
+            transparent 25%, 
+            transparent 50%, 
+            rgba(255, 255, 255, 0.1) 50%, 
+            rgba(255, 255, 255, 0.1) 75%, 
+            transparent 75%, 
+            transparent); /* Adds a fabric-like texture */
+    background-size: 10px 10px; /* Defines the size of the texture pattern */
+}
+
+/* Vintage-style imperfections overlay */
+.page-wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.02) 50%, transparent 50%); /* Creates subtle imperfections like stripes */
+    background-size: 100% 4px; /* Sets the spacing of the imperfections */
+    pointer-events: none; /* Ensures the overlay does not interfere with interactions */
+    z-index: 20; /* Keeps the imperfections overlay on top */
+    opacity: 0.5; /* Makes the imperfections semi-transparent */
+    box-shadow: inset 0 0 10px rgba(128, 128, 128, 0.3);
+
+}
 
 
 
