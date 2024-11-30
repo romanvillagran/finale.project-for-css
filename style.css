@@ -165,5 +165,21 @@ footer a {
     text-decoration: none; /* Removes underline from links */
 }
 
+/* Scrollbar customization */
+.main.supporting > div::-webkit-scrollbar,.sidebar::-webkit-scrollbar {
+    width: 8px; /* Narrow scrollbar */
+}
+
+.main.supporting > div::-webkit-scrollbar-track,.sidebar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light background for scrollbar track */
+}
+
+.main.supporting > div::-webkit-scrollbar-thumb,.sidebar::-webkit-scrollbar-thumb {
+    background: #8B4513; /* Dark brown color for scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+
+
 
 
