@@ -1,6 +1,6 @@
 /* Global body styles */
 body {
-    background-color: #E6D2B5;  /* Warm, slightly textured beige reminiscent of 1950s wallpaper */
+    background-color: #987c52;  /* Warm, slightly textured beige reminiscent of 1950s wallpaper */
     background-image: linear-gradient(rgba(210, 180, 140, 0.1) 1px, transparent 1px),  linear-gradient(90deg, rgba(210, 180, 140, 0.1) 1px, transparent 1px); /* Subtle grid pattern for texture */
     background-size: 30px 30px; /* Defines the size of the grid pattern */
     font-family: 'Arial', sans-serif; /* Uses Arial font for readability */
@@ -29,7 +29,7 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
     padding: 30px; /* Padding inside the intro section */
     z-index: 10; /* Ensures intro section is above other content */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* adds a shadow around the "photo frame" */
+    box-shadow: 0px 5px 20px black; /* adds a shadow around the "photo frame" */
 }
 /* Decorative hanging wire effect before and after the intro */
 .intro::before, .intro::after {
@@ -61,4 +61,60 @@ body {
     position: relative; /* Allows absolute positioning of pseudo-elements */
 }
 
+/* Individual content boxes inside the grid with tilt effect */
+.main.supporting > div {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 10px solid #8B4513; /* Dark brown border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 20px; /* Padding inside the boxes */
+    max-height: 300px; /* Limits the height */
+    overflow-y: auto; /* Allows scrolling if content exceeds max height */
+    position: relative;
+    transform-origin: center center; /* Rotation centered within the box */
+    transition:  0.1s ease; /* Smooth transition for transform effects */
+    box-shadow: 0px 5px 20px black; /* adds a shadow around the "photo frame" */
+}
 
+/* Tilt effect for each grid item */
+.main.supporting > div:nth-child(1) {
+    transform: rotate(-3deg); /* Slight tilt for the first box */
+
+}
+
+.main.supporting > div:nth-child(2) {
+    transform: rotate(2deg); /* Slight tilt for the second box */
+}
+
+.main.supporting > div:nth-child(3) {
+    transform: rotate(-2deg); /* Slight tilt for the third box */
+}
+
+.main.supporting > div:nth-child(4) {
+    transform: rotate(3deg); /* Slight tilt for the fourth box */
+}
+
+/* Hover effect to bring the box to the front and straighten it */
+.main.supporting > div:hover {
+    transform: rotate(0deg) scale(1.05); /* Removes tilt and slightly enlarges the box */
+    z-index: 5; /* Brings the hovered box to the front */
+}
+
+/* Sidebar styling */
+.sidebar {
+    background-color: #f4f4f4; /* Light grey background */
+    border: 10px solid #8B4513; /* Dark brown border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px; /* Padding inside the sidebar */
+    max-height: 500px; /* Limits height */
+    overflow-y: auto; /* Allows scrolling */
+    box-shadow: 0px 5px 20px black; /* adds a shadow around the "photo frame" */
+}
+
+/* Sidebar link styling */
+.sidebar a {
+    color: #5D4037; /* Brownish text color */
+    text-decoration: none; /* Removes underline */
+    position: relative; /* Allows positioning of pseudo-elements */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    font-weight: bold; /* Makes the link text bold */
+}
