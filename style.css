@@ -14,7 +14,6 @@ body {
     max-width: 1200px; /* Sets a maximum width for the content */
     margin: 0 auto; /* Centers the page-wrapper on the screen */
     padding: 40px; /* Adds padding inside the page wrapper */
-    background-color: rgba(230, 210, 181, 0.6);  /* Semi-translucent background to soften the appearance */
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Adds a shadow effect for depth */
 }
 
@@ -117,4 +116,22 @@ body {
     position: relative; /* Allows positioning of pseudo-elements */
     transition: color 0.3s ease; /* Smooth transition for color change */
     font-weight: bold; /* Makes the link text bold */
+}
+
+/* Underline effect for sidebar links on hover */
+.sidebar a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #8B4513; /* Dark brown underline */
+    transform: scaleX(0); /* Starts with no underline */
+    transition: transform 0.3s ease; /* Smooth transition for underline appearance */
+}
+
+/* Changes link color on hover and reveals the underline */
+.sidebar a:hover {
+    color: #3E2723; /* Darker brown for hovered link */
 }
