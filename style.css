@@ -149,7 +149,21 @@ body {
     padding-bottom: 5px; /* Adds some space between text and border */
 }
 
+/* Footer styling */
+footer {
+    grid-column: 1 / -1; /* Spans the footer across both columns */
+    text-align: center; /* Centers the text */
+    padding: 20px; /* Padding inside the footer */
+    background-color: #8B4513; /* Dark wood color for footer */
+    color: white; /* White text */
+}
 
+/* Footer links styling */
+footer a {
+    color: white; /* White text for links */
+    margin: 0 10px; /* Spacing between links */
+    text-decoration: none; /* Removes underline from links */
+}
 
 
 
