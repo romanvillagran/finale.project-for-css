@@ -18,5 +18,18 @@ body {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Adds a shadow effect for depth */
 }
 
+/* Styling for the introduction section (spans full width of the page) */
+.intro {
+    position: relative;  /* Allows absolute positioning of the pseudo-elements */
+    grid-column: 1 / -1; /* Makes the intro section span both columns */
+    max-width: 100%; /* Ensures it stretches across the available width */
+    margin-bottom: 40px; /* Adds space below the intro */
+    background-color: #f4f4f4; /* Light grey background */
+    border: 15px solid #8B4513; /* Dark brown border resembling wood */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 30px; /* Padding inside the intro section */
+    z-index: 10; /* Ensures intro section is above other content */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* adds a shadow around the "photo frame" */
+}
 
 
