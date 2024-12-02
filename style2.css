@@ -20,6 +20,7 @@ body{
     display: flex;/* Enables flexbox layout */
     flex-direction: row;/* Aligns children elements in a horizontal row */
     flex-wrap: wrap;
+    position: relative;
     justify-content: space-between;/* Aligns children elements to the start horizontally */
     max-width: 1200px;/* Limits the max width to 1200px */
     margin-top: 20px;/* Adds a 20px margin at the top */
@@ -35,6 +36,14 @@ body{
     border-radius: 8px;/* Rounds the corners with a radius of 8px */
     margin-left: 20px;/* Adds a 20px margin at the top */
     color: #fff;/* Sets the text color to white */
+}
+
+.sidebar h3 {
+    color: #b3b3b3;
+    font-family: 'Creepster', cursive;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar a{
@@ -63,8 +72,8 @@ h2{
     padding: 25px;/* Adds 40px padding inside the intro section */
     margin-bottom: 30px;/* Adds a 20px margin at the bottom */
     width: calc(70% - 40px);/* Sets the width to 100% of the parent element */
-    text-align: center;/* centers text */
     border-radius: 10px;/* Rounds the corners with a radius of 10px */
+    text-align: center;/* centers the text */
 }
 
 #zen-summary{
@@ -77,17 +86,17 @@ h3{
     color: darkgrey;/* Sets the text color to dark grey */
     text-transform: uppercase;/* Makes all letters uppercase */
     text-shadow: 1px 1px 3px #000;/* Adds a subtle shadow to the text */
-    font-size: 1.8rem;/* Sets the font size to 1.8rem */
+    font-size: 2rem;/* Sets the font size to 2rem */
 }
 
 .main {
-    width: calc(70% - 40px);
-    padding: 20px;
-    background-color: #181818; 
+    width: calc(70% - 40px); /* the width of the main content */
+    padding: 20px;/* adds padding */
+    background: rgba(0, 0, 0, 0.6);/* Semi-transparent black background */
     border: 2px solid #333;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
     margin-bottom: 30px;
-    border-radius: 10px;
+    border-radius: 10px; /* rounds out the border */
 }
 
 .explanation, .participation, .benefits, .requirements{
