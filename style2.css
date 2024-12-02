@@ -19,23 +19,21 @@ body{
 .page-wrapper{
     display: flex;/* Enables flexbox layout */
     flex-direction: row;/* Aligns children elements in a horizontal row */
-    justify-content: center;/* Aligns children elements to the start horizontally */
-    align-items: flex-start;/* Aligns children elements to the start vertically */
+    flex-wrap: wrap;
+    justify-content: space-between;/* Aligns children elements to the start horizontally */
     max-width: 1200px;/* Limits the max width to 1200px */
-    margin: 20px auto;/* Adds a 20px margin at the top */
-    position: relative;/* Sets the positioning context for child elements */
+    margin-top: 20px;/* Adds a 20px margin at the top */
     padding: 20px;/* Adds 20px padding around the container */
     width: 100%;/* Sets the width to 100% of the parent element */
-    gap: 20px;/* Adds 20px space between flex items */
 }
 
 .sidebar {
-    flex: 1; /* Makes the sidebar take up equal space */
+    width: 260px;
     border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
     background: rgba(0, 0, 0, 0.6);/* Semi-transparent black background */
     padding: 20px;/* Adds 20px padding inside the sidebar */
     border-radius: 8px;/* Rounds the corners with a radius of 8px */
-    margin-top: 20px;/* Adds a 20px margin at the top */
+    margin-left: 20px;/* Adds a 20px margin at the top */
     color: #fff;/* Sets the text color to white */
 }
 
@@ -62,10 +60,10 @@ h2{
 .intro{
     background: rgba(0, 0, 0, 0.6);/* Semi-transparent black background */
     border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
-    padding: 40px;/* Adds 40px padding inside the intro section */
-    margin-bottom: 20px;/* Adds a 20px margin at the bottom */
-    width: 100%;/* Sets the width to 100% of the parent element */
-    max-width: 800px;/* Limits the max width to 800px */
+    padding: 25px;/* Adds 40px padding inside the intro section */
+    margin-bottom: 30px;/* Adds a 20px margin at the bottom */
+    width: calc(70% - 40px);/* Sets the width to 100% of the parent element */
+    text-align: center;/* centers text */
     border-radius: 10px;/* Rounds the corners with a radius of 10px */
 }
 
@@ -82,12 +80,21 @@ h3{
     font-size: 1.8rem;/* Sets the font size to 1.8rem */
 }
 
+.main {
+    width: calc(70% - 40px);
+    padding: 20px;
+    background-color: #181818; 
+    border: 2px solid #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
 .explanation, .participation, .benefits, .requirements{
     border: 2px solid #444;/* Adds a 2px solid border with a dark grey color */
     border-radius: 10px;/* Rounds the corners with a radius of 10px */
-    padding: 20px;/* Adds 20px padding inside each section */
-    background-color: rgba(0, 0, 0, 0.7);/* Semi-transparent black background */
-    margin-bottom: 20px;/* Adds a 20px margin at the bottom */
+    padding: 25px;/* Adds 20px padding inside each section */
+    margin-bottom: 30px;/* Adds a 20px margin at the bottom */
 }
 
 .explanation p, .participation p, .benefits p, .requirements p {
@@ -137,6 +144,8 @@ footer a {
     border-radius: 10px; /* Rounds the corners with a radius of 10px */
     font-style: italic;/* Makes the text italic */
     font-size: 1.2rem;/* Sets the font size to 1.2rem */
+    border: 1px solid;
+    text-align: center;
 }
 
 h1, h2, h3, p, a {
